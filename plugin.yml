@@ -1,0 +1,21 @@
+name: DonationMod
+version: 0.2
+author: Gus
+main: com.gus.donationMod.DonationMod
+
+commands:
+  setdonationchest:
+    description: Set a donation chest.
+    permission: donationmod.setdonationchest
+    usage: /setdonationchest [chestname]
+    
+permissions:
+  donationmod.*:
+    default: op
+    children:
+      donationmod.setdonationchest: true
+  donationmod.setdonationchest:
+    default: op
+  donationmod.donate:
+    default: true
+    
